@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>GENTER</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="mx-auto container bg-white md:w-full">
+      <div
+        class="flex items-center justify-between container mb-5 p-2 lg:justify-around"
+      >
+        <!--logo div-->
+        <div>
+          <img
+            src="src/logo.png"
+            alt="/"
+            class="min-w-[7rem] max-w-[7rem] md:pt-3 xl:min-w-[8rem]"
+          />
+        </div>
+        <!--hamburger-->
+        <div
+          id="hamburger"class="w-15 fixed top-3 right-3 bg-white cursor-pointer z-100 rounded-lg p-3 lg:hidden"
+        >
+        <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <div class="hidden lg:flex-col lg:flex">
+          <div class="flex justify-end pb-3">
+            <div class="grow"></div>
+            <div class="flex border-b-[1px] pl-5 pb-2 mt-2">
+              <div class="mr-[4rem]">
+                <div class="flex justify-center items-center cursor-pointer">
+                  <img
+                    src="src/telephone-handle-silhouette.png"
+                    class="h-[1em] mr-1"
+                    alt=""
+                  />
+                  <a href="tel:003-0807-789">+003-0807-789</a>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-center items-center cursor-pointer">
+                  <img src="src/email.png" class="h-[1em] mr-1" alt="" />
+                  <a href="mailto:blablabla@emailramadan.com"
+                    >blablabla@emailramadan.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--NAVBAR-->
+          <div>
+            <nav class="flex">
+              <ul class="flex justify-between font-normal">
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#home" class="p-1">HOME</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#features" class="p-1">FEATURES</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#practice" class="p-1">PRACTICE</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#statistics" class="p-1">STATISTICS</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#testimonials" class="p-1">TESTIMONIALS</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#consultations" class="p-1">CONSULTATIONS</a></li>
+                <li class="mr-4 hover:text-[#b3916f]"><a href="#lawyers" class="p-1">LAWYERS</a></li>
+              </ul>
+              <img
+                src="src/search.png"
+                alt=""
+                class="w-5 h-5 cursor-pointer lg:ml-4"
+              />
+              <span class="px-4 text-gray-500">|</span>
+              <img
+                src="src/England-Flag-Background-PNG-Clip-Art-Image.png"
+                alt=""
+                class="w-5 h-5 hidden cursor-pointer md:block"
+              />
+            </nav>
+          </div>
+        </div>
+        <!--MOBILE NAV-->
+        <div id="mobileNav"class="h-fit top-15 left-0 w-full bg-white">
+          <nav class="pt-16">
+            <ul class="menu-item py-6 flex flex-col items-center gap-y-7 font-normal">
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#home" class="p-1">HOME</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#features" class="p-1">FEATURES</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#practice" class="p-1">PRACTICE</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#statistics" class="p-1">STATISTICS</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#testimonials" class="p-1">TESTIMONIALS</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#consultations" class="p-1">CONSULTATIONS</a></li>
+              <li class="mr-4 hover:text-[#b3916f]"><a href="#lawyers" class="p-1">LAWYERS</a></li>
+            </ul>
+        </div>
+      </div>
+    </header>
+    <!--Header-->
+    <!--HERO-->
+    <section
+      id="home"
+      class="h-[80vh] flex-col flex justify-center w-full items-center"
+    >
+      <!--BG IMAGE-->
+      <div class="absolute heroImage w-full h-[80vh] z-[-10] bg-cover"></div>
+      <!--BG IMAGE-->
+      <!--right div -->
+      <div
+        class="flex flex-col items-center max-w-lg text-center pt-10 relative bg-white bg-opacity-20 p-1 rounded-md md:mx-0 md:pt-0 lg:-right-44 xl:bg-transparent lg:items-start lg:text-start"
+      >
+        <div class="text-[#283345] p-5">
+          <p class="font-bold text-lg">GENTER LAWYER & ATTORNEY</p>
+          <h1 class="font-bold text-5xl py-5">DEFINING SUCCESS TOGETHER</h1>
+          <p class="font-['Arizonia'] text-2xl">
+            A business approach to legal service & breakthrough
+          </p>
+        </div>
+        <div class="p-5 font-medium text-white">
+          <button class="bg-[#d0aa85] px-6 py-2 btnHover">
+            CONTACT US BY CLICKING
+          </button>
+        </div>
+      </div>
+      <!--right div-->
+    </section>
+    <!--HERO-->
+    <!--Features-->
+    <section id="features" class="mx-auto container features mb-16 md:w-full">
+      <div
+        class="grid justify-items-center mt-12 gap-10 px-5 py-2 pb-6 mx-auto container md:px-1 md:w-9/12 xl:grid-cols-3"
+      >
+        <!--Prva karta-->
+        <div class="py-2 w-fit">
+          <div class="overflow-hidden">
+            <img
+              src="src/young-businessman-signing-partnership.jpg"
+              alt=""
+              class="h-64"
+            />
+          </div>
+          <div
+            class="flex justify-center gap-8 items-center bg-[#d0aa85] py-3 px-4 text-white font-bold"
+          >
+            <div><img src="src/auction.png" alt="" class="w-8" /></div>
+            <div>
+              <div><h3>COURAGE TO GO DEEP</h3></div>
+              <div><p class="font-normal">We will go deep</p></div>
+            </div>
+          </div>
+        </div>
+        <!--Druha karta-->
+        <div class="py-2 w-fit">
+          <div class="overflow-hidden">
+            <img src="src/scales.png" alt="" class="h-64" />
+          </div>
+          <div
+            class="flex justify-center gap-8 items-center bg-[#d0aa85] py-3 px-4 text-white font-bold"
+          >
+            <div><img src="src/courthouse.png" alt="" class="w-8" /></div>
+            <div>
+              <div><h3>COURAGE TO GO DEEP</h3></div>
+              <div><p class="font-normal">We will go deep</p></div>
+            </div>
+          </div>
+        </div>
+        <!--Tretia karta-->
+        <div class="py-2 w-fit">
+          <div class="overflow-hidden">
+            <img
+              src="src/successful-entrepreneurs-analyzing-perspectives.jpg"
+              alt=""
+              class="h-64"
+            />
+          </div>
+          <div
+            class="flex justify-center gap-8 items-center bg-[#d0aa85] py-3 px-4 text-white font-bold"
+          >
+            <div><img src="src/cover-letter.png" alt="" class="w-8" /></div>
+            <div>
+              <div><h3>COURAGE TO GO DEEP</h3></div>
+              <div><p class="font-normal">We will go deep</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Practice-->
+    <section
+      id="practice"
+      class="text-[#283345] text-center mx-auto container md:w-full"
+    >
+      <div class="mx-auto grid grid-cols-1 mb-14 md:w-9/12">
+        <div class="grid justify-items-center p-5">
+          <div>
+            <h2 class="font-bold text-3xl border-b-[1px] border-[#283345] pb-1">
+              PRACTICE AREA
+            </h2>
+          </div>
+          <div>
+            <p class="font-['Arizonia']">
+              Our independance makes the differance
+            </p>
+          </div>
+        </div>
+        <!--Horná časť-->
+        <!--Dolná časť-->
+        <div
+          class="grid auto-cols-auto gap-y-5 justify-items-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-20 lg:py-10"
+        >
+          <!--Karta-->
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer"
+          >
+            <div>
+              <img src="src/family.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">FAMILY</p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer"
+          >
+            <div>
+              <img src="src/insurance.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">INSURANCE</p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer"
+          >
+            <div>
+              <img src="src/law.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">JUSTICE</p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer"
+          >
+            <div>
+              <img src="src/docs.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">PAPERWORK</p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer "
+          >
+            <div>
+              <img src="src/agreement.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">MARKET</p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justfiy-center px-6 py-9 w-10/12 hoverPractice cursor-pointer"
+          >
+            <div>
+              <img src="src/family.png" alt="" class="w-[4rem] h-[4rem]" />
+            </div>
+            <div><p class="text-2xl font-bold py-2">LOVE  </p></div>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate, exercitationem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Horná časť-->
+
+      <!--Dolná časť-->
+    </section>
+
+    <!--Statistics-->
+    <section
+      id="statistics"
+      class="w-full statistics h-fit pb-5 mb-16 xl:h-[26rem]"
+    >
+      <div class="container mx-auto grid grid-cols-1 md:w-9/12">
+        <!--Horná časť-->
+        <div class="grid justify-items-center text-white mt-16">
+          <div>
+            <h2 class="font-bold text-3xl border-b-[1px] border-white pb-1">
+              OUR STATISTICS
+            </h2>
+          </div>
+          <div>
+            <h3 class="font-['Arizonia'] pt-1 text-xl">
+              Leadership, Community, Justice
+            </h3>
+          </div>
+        </div>
+        <!--Horná časť-->
+        <!--Dolná časť-->
+        <div
+          class="flex flex-wrap justify-center gap-x-10 text-[#283345] mx-auto md:w-9/12 xl:flex-nowrap"
+        >
+          <!--Karta-->
+          <div
+            class="flex flex-col w-52 h-60 bg-white justify-center items-center shadow-md mt-16"
+          >
+            <div class="p-5">
+              <img src="src/dialog.png" alt="" class="h-16" />
+            </div>
+            <div><p class="font-bold text-3xl">100</p></div>
+            <div>
+              <p class="font-['Arizonia'] text-lg">People talking</p>
+            </div>
+          </div>
+          <!--Karta-->
+          <div
+            class="flex flex-col w-52 h-60 bg-white justify-center items-center shadow-md mt-16"
+          >
+            <div class="p-5">
+              <img src="src/diamond.png" alt="" class="h-16" />
+            </div>
+            <div><p class="font-bold text-3xl">3200</p></div>
+            <div>
+              <p class="font-['Arizonia'] text-lg">Best Resources</p>
+            </div>
+          </div>
+          <!--Karta-->
+          <div
+            class="flex flex-col w-52 h-60 bg-white justify-center items-center shadow-md mt-16"
+          >
+            <div class="p-5">
+              <img src="src/statistics.png" alt="" class="h-16" />
+            </div>
+            <div><p class="font-bold text-3xl">3200</p></div>
+            <div>
+              <p class="font-['Arizonia'] text-lg">Happy Stonks</p>
+            </div>
+          </div>
+          <!--Karta-->
+          <div
+            class="flex flex-col w-52 h-60 bg-white justify-center items-center shadow-md mt-16"
+          >
+            <div class="p-5">
+              <img src="src/lightbulb.png" alt="" class="h-16" />
+            </div>
+            <div><p class="font-bold text-3xl">18</p></div>
+            <div>
+              <p class="font-['Arizonia'] text-lg">Human Ideas</p>
+            </div>
+          </div>
+        </div>
+        <!--Dolná časť-->
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <section
+      id="testimonials"
+      class="mx-auto container mt-40 mb-16 lg:mt-96 md:w-full xl:mt-52"
+    >
+      <div class="text-[#283345]">
+        <!--Horná časť-->
+        <div class="grid justify-items-center mt-16">
+          <div>
+            <h2 class="font-bold text-3xl border-b-[1px] border-[#283345] pb-1">
+              TESTIMONIALS
+            </h2>
+          </div>
+          <div>
+            <h3 class="font-['Arizonia'] pt-1 text-xl">
+              Commited to helping our dear clients
+            </h3>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-x-10 text-[#283345] mx-auto md:w-9/12 xl:flex-nowrap"
+        >
+          <!--Karta-->
+          <div
+            class="flex flex-col w-64 h-60 justify-center items-center mt-16 text-center"
+          >
+            <div class="p-5 lg:p-5">
+              <img
+                src="src/person1.jpg"
+                alt=""
+                class="h-16 w-16 object-cover rounded-3xl"
+              />
+            </div>
+            <div>
+              <p class="">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                exercitationem magnam sint voluptas totam pariatur.
+              </p>
+            </div>
+            <div>
+              <p class="font-['Arizonia'] text-lg py-3">
+                Leroy Jenkins, New York
+              </p>
+            </div>
+          </div>
+          <!--Karta-->
+          <div
+            class="flex flex-col w-72 h-60 justify-center items-center border-y-2 border-gray-100 mt-16 text-center px-4 lg:border-x-2 lg:border-y-0"
+          >
+            <div class="p-5">
+              <img
+                src="src/person2.jpg"
+                alt=""
+                class="h-16 w-16 object-cover rounded-3xl"
+              />
+            </div>
+            <div>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                nisi autem, perspiciatis maiores explicabo dolorum.
+              </p>
+            </div>
+            <div>
+              <p class="font-['Arizonia'] text-lg py-3">
+                Hamstodon Dam, New York
+              </p>
+            </div>
+          </div>
+          <!--Karta-->
+          <div
+            class="flex flex-col w-64 h-60 justify-center items-center mt-16 text-center"
+          >
+            <div class="p-5">
+              <img
+                src="src/person3.jpg"
+                alt=""
+                class="h-16 w-16 object-cover rounded-3xl"
+              />
+            </div>
+            <div>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, officia nisi distinctio consequatur mollitia
+                tenetur!
+              </p>
+            </div>
+            <div>
+              <p class="font-['Arizonia'] text-lg py-3">Ellie Golden, Sydney</p>
+            </div>
+          </div>
+        </div>
+        <!--Dolná časť-->
+      </div>
+    </section>
+
+    <!--Photo Carousel-->
+    <section
+      id="carousel"
+      class="w-full h-96 mb-16 flex items-center overflow-hidden"
+    >
+      <!--fotky div-->
+      <div class="h-5/6 flex">
+        <img src="src/caro1.jpg" alt="" class="h-full w-1/3 object-cover" />
+        <img src="src/caro2.jpg" alt="" class="h-full w-1/3 object-cover" />
+        <img src="src/caro3.jpg" alt="" class="h-full w-1/3 object-cover" />
+        <img src="src/caro4.png" alt="" class="h-full w-1/3 object-cover" />
+      </div>
+    </section>
+    
+    <!--Consultations-->
+    <section
+      id="consultations"
+      class="text-[#283345] text-center mx-auto container h-fit md:w-full"
+    >
+      <div class="mx-auto grid grid-cols-1 mb-14 p-5 md:w-9/12 lg:p-0">
+        <!--Horná časť-->
+        <div class="grid justify-items-center mt-16">
+          <div>
+            <h2 class="font-bold text-3xl border-b-[1px] border-[#283345] pb-1">
+              REQUEST A FREE CONSULTATION
+            </h2>
+          </div>
+          <div>
+            <h3 class="font-['Arizonia'] pt-1 text-xl">
+              Contact us for a better experience
+            </h3>
+          </div>
+        </div>
+        <!--Dolná časť-->
+        <div
+          class="mt-16 flex gap-y-16 gap-x-16 flex-col lg:gap-y-0 lg:flex-row"
+        >
+          <!--ľavé-->
+          <div class="w-full lg:w-1/2">
+            <div class="p-5 border-2 border-b-0 text-start">
+              <p class="text-xl font-bold">OUR OFFICE</p>
+            </div>
+            <div class="object-cover">
+              <img src="src/businesspeople-movement.jpg" alt="/" />
+            </div>
+            <div>
+              <p class="text-start mt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                cum recusandae fuga nemo maxime minima sint quaerat veritatis
+                aliquid saepe eos, molestiae eum distinctio aliquam a illum
+                facilis voluptates corrupti illo vel est sequi. Doloremque?
+              </p>
+            </div>
+            <div class="flex justify-start text-start mt-9">
+              <div class="mr-7">
+                <p class="font-bold">Adress:</p>
+                <p class="font-bold">Phone:</p>
+                <p class="font-bold">Email:</p>
+              </div>
+              <div>
+                <p>Our office, 39 Brooklyn Heavenue. New York</p>
+                <p>601-5848-5789</p>
+                <p>contact@usmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!--pravé-->
+          <div class="w-full text-start h-fit lg:w-1/2">
+            <div class="w-full border-2">
+              <div class="p-5 border-b-2">
+                <h3 class="text-xl font-bold">DROP US A MESSAGE</h3>
+              </div>
+              <form
+                action="/random_stranka.php"
+                id="form1"
+                class="flex flex-col"
+              >
+                <input type="text" placeholder="Name" class="p-5 border-b-2" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="p-5 border-b-2"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="p-5 border-b-2"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="p-5 border-b-2"
+                />
+                <textarea
+                  name="Message"
+                  id="Message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                  class="p-5 resize-none border-b-2"
+                ></textarea>
+              </form>
+            </div>
+            <div class="py-1 font-medium text-white">
+              <button
+                type="submit"
+                form="forma1"
+                class="bg-[#d0aa85] px-6 py-2 w-full btnHover"
+              >
+                SEND YOUR MESSAGE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--divider-->
+    <div class="w-full bg-gray-200 h-[2px] my-2"></div>
+    <!--Lawyers-->
+    <section
+      id="lawyers"
+      class="text-[#283345] text-center mx-auto container h-fit mt-16 md:w-full"
+    >
+      <div class="mx-auto grid grid-cols-1 mb-14 p-5 md:w-9/12 lg:p-0">
+        <!--Horná časť-->
+        <div class="grid justify-items-center mt-16">
+          <div>
+            <h2 class="font-bold text-3xl border-b-[1px] border-[#283345] pb-1">
+              MEET OUR ATTORNEYS
+            </h2>
+          </div>
+          <div>
+            <h3 class="font-['Arizonia'] pt-1 text-xl">
+              Proving good people do good things
+            </h3>
+          </div>
+        </div>
+        <!--Dolná časť-->
+        <div
+          class="flex justify-around flex-wrap mx-auto mt-16 gap-y-16 md:w-full"
+        >
+          <!--Karta-->
+          <div
+            class="h-fit w-72 flex flex-col border-b-2 pb-3 md:pb-0 md:border-b-0"
+          >
+            <!--fotka-->
+            <div>
+              <img src="src/white-man1.png" alt="/" class="" />
+            </div>
+            <!--meno-->
+            <div class="pt-2">
+              <h3 class="text-lg font-bold">PHILIP BARNETT</h3>
+              <p class="text-xs pb-2 pt-1">ATTORNEY</p>
+            </div>
+            <!--Popis-->
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat iusto, exercitationem nostrum rem magnam impedit?
+              </p>
+            </div>
+            <!--Kontakt-->
+            <div>
+              <div class="text-[#d0aa85] p-2">
+                <a href="tel:001-0412-978"
+                  ><i class="fa-solid fa-phone" style="color: #d0aa85"></i>
+                  001-0412-978</a
+                >
+              </div>
+              <!--ikonky-->
+              <div class="flex justify-center gap-x-3">
+                <a href="mailto:randomemail@gmail.com@gmail.com"
+                  ><i class="fa-solid fa-envelope" style="color: #283345"></i
+                ></a>
+                <a href="https://wa.me/0010412978" target="_blank"
+                  ><i class="fa-brands fa-whatsapp" style="color: #283345"></i
+                ></a>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter" style="color: #283345"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-fit w-72 flex flex-col border-b-2 pb-3 md:pb-0 md:border-b-0"
+          >
+            <!--fotka-->
+            <div><img src="src/brown-man1.png" alt="/" /></div>
+            <!--meno-->
+            <div class="pt-2">
+              <h3 class="text-lg font-bold">ATUL CHOUDHURY</h3>
+              <p class="text-xs pb-2 pt-1">ATTORNEY</p>
+            </div>
+            <!--Popis-->
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat iusto, exercitationem nostrum rem magnam impedit?
+              </p>
+            </div>
+            <!--Kontakt-->
+            <div>
+              <div class="text-[#d0aa85] p-2">
+                <a href="tel:001-0412-978"
+                  ><i class="fa-solid fa-phone" style="color: #d0aa85"></i>
+                  001-0412-978</a
+                >
+              </div>
+              <!--ikonky-->
+              <div class="flex justify-center gap-x-3">
+                <a href="mailto:randomemail@gmail.com@gmail.com"
+                  ><i class="fa-solid fa-envelope" style="color: #283345"></i
+                ></a>
+                <a href="https://wa.me/0010412978" target="_blank"
+                  ><i class="fa-brands fa-whatsapp" style="color: #283345"></i
+                ></a>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter" style="color: #283345"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-fit w-72 flex flex-col border-b-2 pb-3 md:pb-0 md:border-b-0"
+          >
+            <!--fotka-->
+            <div><img src="src/black-man1.png" alt="/" /></div>
+            <!--meno-->
+            <div class="pt-2">
+              <h3 class="text-lg font-bold">LUIS WILLIAMS</h3>
+              <p class="text-xs pb-2 pt-1">ATTORNEY</p>
+            </div>
+            <!--Popis-->
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat iusto, exercitationem nostrum rem magnam impedit?
+              </p>
+            </div>
+            <!--Kontakt-->
+            <div>
+              <div class="text-[#d0aa85] p-2">
+                <a href="tel:001-0412-978"
+                  ><i class="fa-solid fa-phone" style="color: #d0aa85"></i>
+                  001-0412-978</a
+                >
+              </div>
+              <!--ikonky-->
+              <div class="flex justify-center gap-x-3">
+                <a href="mailto:randomemail@gmail.com@gmail.com"
+                  ><i class="fa-solid fa-envelope" style="color: #283345"></i
+                ></a>
+                <a href="https://wa.me/0010412978" target="_blank"
+                  ><i class="fa-brands fa-whatsapp" style="color: #283345"></i
+                ></a>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter" style="color: #283345"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Blue divider-->
+    <section class="w-full h-32 flex items-center mt-32" id="blueDivider">
+      <div
+        class="mx-auto md:w-9/12 container flex flex-col gap-3 md:flex-row md:justify-between items-center"
+      >
+        <div class="text-white font-bold">
+          <p>ARE YOU READY TO CHANGE YOUR BUSSINESS?</p>
+        </div>
+        <div class="font-medium text-white">
+          <button class="bg-[#d0aa85] px-6 py-2 btnHover">
+            CONTACT US BY CLICKING
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-[#1f1f1f] text-center mx-auto w-full h-fit xl:h-96">
+      <div class="h-[90%] mx-auto md:w-9/12 flex flex-col">
+        <!--Horná časť-->
+        <div class="flex items-center justify-center text-left text-[#acacac]">
+          <div
+            class="flex flex-col lg:flex-row items-center lg:items-stretch gap-8 pt-5"
+          >
+            <!--prvá foot karta-->
+            <div class="flex flex-col w-[90%] lg:w-1/4 gap-y-5">
+              <div><img src="src/logo-white.png" alt="" class="w-20" /></div>
+              <div>
+                <p>
+                  We're commited to 1000s of clients, Lorem ipsum dolor sit amet
+                  consectetur Counteroffering.
+                </p>
+              </div>
+              <div>
+                <div class="text-[#acacac]">
+                  <a href="tel:001-0412-978"
+                    ><i class="fa-solid fa-phone" style="color: #acacac"></i>
+                    001-0412-978</a
+                  >
+                </div>
+                <div class="text-[#d0aa85]">
+                  <a href="mailto:randomemail@gmail.com@gmail.com"
+                    ><i class="fa-solid fa-envelope" style="color: #acacac"></i>
+                    random@email.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--druhá foot karta-->
+            <div class="flex flex-col w-[90%] lg:w-1/4 gap-y-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">LATEST BLOG</h3>
+              </div>
+              <div>
+                <p class="text-[#acacac] font-bold">A guide to Mr.Snarl</p>
+                <p class="text-[#6b6b6b]">Posted 07.2020</p>
+              </div>
+              <div>
+                <p class="text-[#acacac] font-bold">Testimonials from Snarl</p>
+                <p class="text-[#666666]">Posted 07.2020</p>
+              </div>
+              <div>
+                <p class="text-[#acacac] font-bold">Gnarl of Snarl</p>
+                <p class="text-[#666666]">Posted 07.2020</p>
+              </div>
+            </div>
+            <!--tretia foot karta-->
+            <div class="flex flex-col w-[90%] lg:w-1/4 gap-y-5">
+              <div><h2 class="text-white font-bold text-xl">TAGS</h2></div>
+              <div class="flex flex-wrap text-[#acacac] gap-3">
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Lorem</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Lorem</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Loremporem</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Loremtorkotor</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Loremkrotor</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Lorem</p>
+                </div>
+                <div class="border-2 border-[#666666] px-3 py-2">
+                  <p>Lorempaluza</p>
+                </div>
+              </div>
+            </div>
+            <!--štvrtá foot karta-->
+            <div class="flex flex-col w-[90%] lg:w-1/4 gap-y-5">
+              <div>
+                <h3 class="text-white font-bold text-xl">NEWSLETTER</h3>
+              </div>
+              <div>
+                <div class="py-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eum.
+                  </p>
+                </div>
+                <div class="py-3 flex items-center">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Email"
+                    class="p-2 w-full"
+                  />
+
+                  <a href="mailto:balblala@gmail.com"
+                    ><i class="fa-solid fa-paper-plane fa-xl p-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Dolná časť-->
+      </div>
+      <div class="h-[10%] bg-[#1a1a1a] flex justify-center items-center p-3 mt-5 ">
+        <div class="flex justify-between w-9/12">
+          <div class="flex justify-center gap-x-3">
+            <a href="mailto:randomemail@gmail.com@gmail.com"
+              ><i class="fa-solid fa-envelope" style="color: #acacac"></i
+            ></a>
+            <a href="https://wa.me/0010412978" target="_blank"
+              ><i class="fa-brands fa-whatsapp" style="color: #acacac"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter" style="color: #acacac"></i
+            ></a>
+          </div>
+          <div><p class="text-[#acacac] text-sm">&copy; 2023 daishindeveloper</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

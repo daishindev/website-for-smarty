@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.heroImage {
+  background-image: url("src/Untitled-1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.hoverPractice:hover {
+  filter: invert(75%) sepia(12%) saturate(931%) hue-rotate(348deg)
+    brightness(93%) contrast(85%);
+  box-shadow: 0 1px 3px 0 #858ad0, 0 1px 2px -1px #8590d0;
+  box-shadow: #d0aa85;
+}
+
+#statistics {
+  background: #283345;
+  background-image: url("src/istockphoto-1140705087-612x612.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#blueDivider {
+  background: #28334586;
+  background-image: url("src/suitcase.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  transition: 0.3s;
+  border-radius: 0.2rem;
+}
+.btnHover:hover {
+  background: #b1773e;
+}
+
+.active {
+  display: block !important;
+}
+#mobileNav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 40;
+  display: none;
+}
+#hamburger {
+  z-index: 41;
+}
